@@ -81,4 +81,5 @@ $('#l-cards').innerHTML=cats.map((c,k)=>{const r=Math.floor(Math.random()*c.p.le
 return `<button class="stk" data-cat="${k}" aria-label="${esc(c.t)}：查看全部照片"><span class="pile">${back}<img src="${esc(c.p[r].image)}" alt="${esc(c.p[r].alt||c.t)}" style="z-index:9"></span><b>${esc(c.t)}</b><small>${esc(c.e)}</small><span class="d">${esc(c.d)}</span></button>`}).join('');
 $('#l-cards').onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;const c=cats[+b.dataset.cat];lastBtn=b;$('#d-body').innerHTML=`<h3 id="d-title">${esc(c.t)}</h3><p>${esc(c.d)}</p>`+c.p.map(x=>`<img src="${esc(x.image)}" alt="${esc(x.alt||c.t)}" loading="lazy">`).join('');dlg.showModal()};
 }
+function roles(){Loader.get('data/roles.json').then(r=>{if(!r)return;$('#r-lead').textContent=r.lead||'';$('#r-cards').innerHTML=(r.items||[]).map(x=>`<article class="role"><small>${esc(x.en)}</small><h3>${esc(x.name)}</h3><p>${esc(x.summary)}</p><div class="pl">代表成果</div><ul>${(x.proof||[]).map(q=>`<li>${esc(q)}</li>`).join('')}</ul></article>`).join('')})}
 init().then(()=>{lifeCats();roles()});
