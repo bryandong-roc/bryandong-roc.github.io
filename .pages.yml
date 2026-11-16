@@ -1,0 +1,177 @@
+media:
+  input: assets/images
+  output: /assets/images
+  categories: [image]
+content:
+  - name: "site"
+    label: "網站設定"
+    type: "file"
+    path: "data/site-settings.json"
+    format: "json"
+    fields:
+      - name: "name"
+        type: "string"
+      - name: "en"
+        type: "string"
+      - name: "brand"
+        type: "string"
+      - name: "tagline"
+        type: "string"
+      - name: "intro"
+        type: "text"
+      - name: "photo"
+        type: "image"
+      - name: "photo_alt"
+        type: "string"
+      - name: "email"
+        type: "string"
+      - name: "linkedin"
+        type: "string"
+      - name: "facebook"
+        type: "string"
+      - name: "site_url"
+        type: "string"
+  - name: "about"
+    label: "關於我"
+    type: "file"
+    path: "data/about.json"
+    format: "json"
+    fields:
+      - name: "intro"
+        type: "text"
+      - name: "background"
+        type: "string"
+        list: true
+      - name: "focus"
+        type: "string"
+        list: true
+      - name: "philosophy"
+        type: "text"
+  - name: "roles"
+    label: "核心職能與期待職位"
+    type: "file"
+    path: "data/roles.json"
+    format: "json"
+    fields:
+      - name: "lead"
+        type: "text"
+      - name: "items"
+        type: "object"
+        list: true
+        fields:
+          - name: "name"
+            type: "string"
+          - name: "en"
+            type: "string"
+          - name: "summary"
+            type: "text"
+          - name: "proof"
+            type: "string"
+            list: true
+  - name: "timeline"
+    label: "人生與職涯歷程"
+    type: "file"
+    path: "data/timeline.json"
+    format: "json"
+    fields:
+      - name: "items"
+        type: "object"
+        list: true
+        fields:
+          - name: "title"
+            type: "string"
+            required: true
+          - name: "slug"
+            type: "string"
+          - name: "organization"
+            type: "string"
+          - name: "role"
+            type: "string"
+          - name: "type"
+            type: "select"
+            options:
+              values:
+                - "職涯"
+                - "社會參與"
+                - "求學與研究"
+          - name: "description"
+            type: "text"
+          - name: "highlights"
+            type: "string"
+            list: true
+          - name: "image"
+            type: "image"
+          - name: "external_url"
+            type: "string"
+          - name: "status"
+            type: "select"
+            options:
+              values:
+                - "draft"
+                - "published"
+                - "unpublished"
+          - name: "sort_order"
+            type: "number"
+  - name: "architecting"
+    label: "商業創構"
+    type: "file"
+    path: "data/business-architecting.json"
+    format: "json"
+    fields:
+      - name: "definition"
+        type: "text"
+      - name: "steps"
+        type: "object"
+        list: true
+        fields:
+          - name: "name"
+            type: "string"
+          - name: "en"
+            type: "string"
+          - name: "summary"
+            type: "text"
+          - name: "cases"
+            type: "string"
+            list: true
+          - name: "status"
+            type: "select"
+            options:
+              values:
+                - "draft"
+                - "published"
+                - "unpublished"
+          - name: "sort_order"
+            type: "number"
+  - name: "life"
+    label: "生活與探索（每類最多顯示 5 張）"
+    type: "file"
+    path: "data/life.json"
+    format: "json"
+    fields:
+      - name: "categories"
+        type: "object"
+        list: true
+        fields:
+          - name: "name"
+            type: "string"
+          - name: "en"
+            type: "string"
+          - name: "summary"
+            type: "text"
+          - name: "photos"
+            type: "object"
+            list: true
+            fields:
+              - name: "image"
+                type: "image"
+              - name: "alt"
+                type: "string"
+          - name: "status"
+            type: "select"
+            options:
+              values:
+                - "draft"
+                - "published"
+                - "unpublished"
+          - name: "sort_order"
+            type: "number"
