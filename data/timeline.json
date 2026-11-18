@@ -4,7 +4,6 @@
       "title": "策略長",
       "slug": "tl-1",
       "organization": "威摩科技",
-      "role": "",
       "type": "職涯",
       "description": "主責企業與政府發展策略、特許產業法規談判、公共事務與重大危機管理。",
       "highlights": [
@@ -23,7 +22,6 @@
       "title": "產品經理",
       "slug": "tl-2",
       "organization": "第一電阻",
-      "role": "",
       "type": "職涯",
       "description": "主導新產品事業處從 0 到 1 的建置。",
       "highlights": [
@@ -40,7 +38,6 @@
       "title": "負責人",
       "slug": "tl-3",
       "organization": "哲楓有限公司",
-      "role": "",
       "type": "職涯",
       "description": "負責公司營運與盈虧，主導市場拓展、國際貿易代理與 B2B 專案開發。",
       "highlights": [
@@ -56,7 +53,6 @@
       "title": "產品企劃",
       "slug": "tl-4",
       "organization": "輔信科技",
-      "role": "",
       "type": "職涯",
       "description": "負責 XPC 準系統與周邊產品線、OEM/ODM 專案的開發與管理。",
       "highlights": [
@@ -72,7 +68,6 @@
       "title": "企劃專員",
       "slug": "tl-5",
       "organization": "麗臺科技",
-      "role": "",
       "type": "職涯",
       "description": "前期在研發部門負責產品開發，後期調入總經理室，擔任高階主管的幕僚。",
       "highlights": [
@@ -88,7 +83,6 @@
       "title": "秘書長",
       "slug": "tl-6",
       "organization": "中華民國機車安全暨產業創新協會",
-      "role": "",
       "type": "社會參與",
       "description": "統籌協會營運與公共事務，主導機車安全政策倡議與產官學資源整合。",
       "highlights": [
@@ -104,7 +98,6 @@
       "title": "市政顧問",
       "slug": "tl-7",
       "organization": "臺北市政府",
-      "role": "",
       "type": "社會參與",
       "description": "擔任交通政策顧問，診斷交通工程風險並協助推動道路合理化設計。",
       "highlights": [
@@ -119,12 +112,11 @@
       "title": "商學院 EMBA",
       "slug": "tl-8",
       "organization": "東吳大學",
-      "role": "",
       "type": "求學與研究",
       "description": "主攻經營管理、商業模式與數位轉型，並跨修法學院課程。",
       "highlights": [
-        "碩士論文《共享機車之複合商業模式剖析》獲 95 分",
-        "學業總平均 94.43 分，應屆第 1 名",
+        "碩士論文《共享機車之複合商業模式剖析》獲95分",
+        "學業總成績平均94.43分，應屆第一名畢業",
         "建構「商業策略＋法律風險控管」複合視野"
       ],
       "status": "published",
@@ -134,7 +126,6 @@
       "title": "發起人／黨主席",
       "slug": "tl-party",
       "organization": "中華民國機車黨",
-      "role": "",
       "type": "社會參與",
       "description": "一個關注機車族權益的議題型組織。創立並擔任黨主席，爭取機車族合理權益、促進道路交通安全，喚起社會對機車議題的關注。",
       "highlights": [
