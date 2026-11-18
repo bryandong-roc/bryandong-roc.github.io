@@ -36,7 +36,7 @@
       "photos": [
         {
           "image": "/assets/images/life/life-01.webp",
-          "alt": "加框的軍艦紀念照片"
+          "alt": "服役軍艦照"
         },
         {
           "image": "/assets/images/life/life-02.webp",
@@ -44,11 +44,11 @@
         },
         {
           "image": "/assets/images/life/life-03.webp",
-          "alt": "在課堂上發表報告"
+          "alt": "品牌與國際行銷報告"
         },
         {
           "image": "/assets/images/life/life-04.webp",
-          "alt": "與同伴在遊園車上的合照"
+          "alt": "陪伴家人搭遊園車"
         },
         {
           "image": "/assets/images/life/life-05.webp",
@@ -65,23 +65,23 @@
       "photos": [
         {
           "image": "/assets/images/life/interest-01.webp",
-          "alt": "握在手中的遊戲手把"
+          "alt": "入手PS5"
         },
         {
           "image": "/assets/images/life/interest-02.webp",
-          "alt": "機車停在加油站旁，座位上放著安全帽與背包"
+          "alt": "機車旅行"
         },
         {
           "image": "/assets/images/life/interest-03.webp",
-          "alt": "展示台上的淺藍色青瓷器皿"
+          "alt": "參觀故宮青瓷"
         },
         {
           "image": "/assets/images/life/interest-04.webp",
-          "alt": "急救訓練課程中練習使用甦醒球"
+          "alt": "CPR和AED急救訓練"
         },
         {
           "image": "/assets/images/life/interest-05.webp",
-          "alt": "遊戲畫面：披著藍色斗篷的角色面對王座上的骷髏"
+          "alt": "艾爾登法環"
         }
       ],
       "status": "published",
