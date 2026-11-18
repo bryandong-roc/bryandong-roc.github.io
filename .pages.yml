@@ -212,7 +212,7 @@ content:
             type: "number"
             description: "數字小的排前面"
   - name: "life"
-    label: "生活與探索"
+    label: "生活探索"
     type: "file"
     path: "data/life.json"
     format: "json"
