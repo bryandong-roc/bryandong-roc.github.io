@@ -6,23 +6,23 @@
       "summary": "旅途中的風景與故事",
       "photos": [
         {
-          "image": "assets/images/life/trip-01.webp",
+          "image": "/assets/images/life/trip-01.webp",
           "alt": "河濱步道與遠方的圓山大飯店"
         },
         {
-          "image": "assets/images/life/trip-02.webp",
+          "image": "/assets/images/life/trip-02.webp",
           "alt": "湖面上的小船與岸邊垂柳"
         },
         {
-          "image": "assets/images/life/trip-03.webp",
+          "image": "/assets/images/life/trip-03.webp",
           "alt": "江南貢院牌坊與節慶燈籠"
         },
         {
-          "image": "assets/images/life/trip-04.webp",
-          "alt": "古城河道與遊船"
+          "image": "/assets/images/life/trip-04.webp",
+          "alt": "秦淮河道與遊船"
         },
         {
-          "image": "assets/images/life/trip-05.webp",
+          "image": "/assets/images/life/trip-05.webp",
           "alt": "黃浦江上的渡輪與浦東高樓"
         }
       ],
@@ -32,26 +32,26 @@
     {
       "name": "生活點滴",
       "en": "Life Moments",
-      "summary": "日常、家人與生活中的片段",
+      "summary": "日常生活中的片段",
       "photos": [
         {
-          "image": "assets/images/life/life-01.webp",
+          "image": "/assets/images/life/life-01.webp",
           "alt": "加框的軍艦紀念照片"
         },
         {
-          "image": "assets/images/life/life-02.webp",
+          "image": "/assets/images/life/life-02.webp",
           "alt": "接受電視新聞專訪"
         },
         {
-          "image": "assets/images/life/life-03.webp",
+          "image": "/assets/images/life/life-03.webp",
           "alt": "在課堂上發表報告"
         },
         {
-          "image": "assets/images/life/life-04.webp",
+          "image": "/assets/images/life/life-04.webp",
           "alt": "與同伴在遊園車上的合照"
         },
         {
-          "image": "assets/images/life/life-05.webp",
+          "image": "/assets/images/life/life-05.webp",
           "alt": "出席智慧機車展示活動"
         }
       ],
@@ -64,23 +64,23 @@
       "summary": "好奇心帶我去的地方",
       "photos": [
         {
-          "image": "assets/images/life/interest-01.webp",
+          "image": "/assets/images/life/interest-01.webp",
           "alt": "握在手中的遊戲手把"
         },
         {
-          "image": "assets/images/life/interest-02.webp",
+          "image": "/assets/images/life/interest-02.webp",
           "alt": "機車停在加油站旁，座位上放著安全帽與背包"
         },
         {
-          "image": "assets/images/life/interest-03.webp",
+          "image": "/assets/images/life/interest-03.webp",
           "alt": "展示台上的淺藍色青瓷器皿"
         },
         {
-          "image": "assets/images/life/interest-04.webp",
+          "image": "/assets/images/life/interest-04.webp",
           "alt": "急救訓練課程中練習使用甦醒球"
         },
         {
-          "image": "assets/images/life/interest-05.webp",
+          "image": "/assets/images/life/interest-05.webp",
           "alt": "遊戲畫面：披著藍色斗篷的角色面對王座上的骷髏"
         }
       ],
