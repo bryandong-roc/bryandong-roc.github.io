@@ -4,10 +4,10 @@
   "brand": "商業創構 Business Architecting",
   "tagline": "透過商業創構，讓下一個洞察轉化為可實現的價值。",
   "intro": "產業洞察、跨域整合、策略創新、模式建構、價值實現",
-  "photo": "assets/images/avatar.jpg",
+  "photo": "/assets/images/avatar.jpg",
   "photo_alt": "董建一個人照片",
   "email": "jianyi.dong@gmail.com",
   "linkedin": "https://www.linkedin.com/in/jianyi-dong/",
-  "site_url": "",
-  "facebook": "https://www.facebook.com/Dong.JianYi/"
+  "facebook": "https://www.facebook.com/Dong.JianYi/",
+  "site_url": "https://bryandong-roc.github.io/"
 }
