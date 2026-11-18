@@ -29,8 +29,8 @@ async function init(){
   if(site){
     $('#h-tag').textContent=site.tagline||'';$('#h-intro').textContent=site.intro||'';
     $('#photo').innerHTML=site.photo?img(site.photo,site.photo_alt||'董建一'):'個人照片<br>（待上傳）';
-    [['#h-li',site.linkedin,'LinkedIn',LI],['#h-fb',site.facebook,'Facebook',FB]].forEach(([q,u,l,i])=>{if(u){const a=$(q);a.href=u;a.hidden=false;a.setAttribute('aria-label',l);a.innerHTML=i}});
-    $('#clist').innerHTML=`<li><span>Email</span>${site.email?`<a href="mailto:${esc(site.email)}">${esc(site.email)}</a>`:TBD}</li><li><span>社群</span><div class="soc">${site.linkedin?`<a href="${esc(site.linkedin)}" target="_blank" rel="noopener" aria-label="LinkedIn">${LI}</a>`:''}${site.facebook?`<a href="${esc(site.facebook)}" target="_blank" rel="noopener" aria-label="Facebook">${FB}</a>`:''}</div></li>`;
+    
+    $('#clist').innerHTML=`<li><span>Email</span>${site.email?`<a href="mailto:${esc(site.email)}">${esc(site.email)}</a>`:TBD}</li><li><span>LinkedIn</span>${site.linkedin?`<a href="${esc(site.linkedin)}" target="_blank" rel="noopener">${esc(site.linkedin.replace(/^https?:\/\/(www\.)?/,'').replace(/\/$/,''))}</a>`:TBD}</li>`;
   }
   if(about){
     $('#a-intro').textContent=about.intro||TBD;$('#a-phil').textContent=about.philosophy||TBD;
