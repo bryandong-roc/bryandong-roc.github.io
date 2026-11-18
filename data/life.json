@@ -40,11 +40,11 @@
         },
         {
           "image": "/assets/images/life/life-02.webp",
-          "alt": "接受電視採專訪"
+          "alt": "接受電視採訪"
         },
         {
           "image": "/assets/images/life/life-03.webp",
-          "alt": "品牌與國際行銷報告"
+          "alt": "品牌與國際行銷簡報"
         },
         {
           "image": "/assets/images/life/life-04.webp",
@@ -59,7 +59,7 @@
       "sort_order": 2
     },
     {
-      "name": "興趣與探索",
+      "name": "興趣探索",
       "en": "Interests",
       "summary": "好奇心帶我去的地方",
       "photos": [
