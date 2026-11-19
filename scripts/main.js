@@ -33,7 +33,7 @@ async function init(){
     $('#clist').innerHTML=`<li><span>Email</span>${site.email?`<a href="mailto:${esc(site.email)}">${esc(site.email)}</a>`:TBD}</li><li><span>LinkedIn</span>${site.linkedin?`<a href="${esc(site.linkedin)}" target="_blank" rel="noopener">${esc(site.linkedin.replace(/^https?:\/\/(www\.)?/,'').replace(/\/$/,''))}</a>`:TBD}</li>`;
   }
   if(about){
-    $('#a-intro').textContent=about.intro||TBD;$('#a-phil').textContent=about.philosophy||TBD;
+    $('#a-intro').textContent=about.intro||TBD;if(about.intro_en)$('.en-sum').textContent=about.intro_en;$('#a-phil').textContent=about.philosophy||TBD;
     $('#a-bg').innerHTML=(about.background||[]).map(x=>`<li>${esc(x)}</li>`).join('');
     $('#a-focus').innerHTML=tagLine(about.focus);
   }
