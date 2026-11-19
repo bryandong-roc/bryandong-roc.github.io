@@ -58,3 +58,5 @@ header{top:env(safe-area-inset-top,0px)}:root{padding-top:env(safe-area-inset-to
 .flinks{flex-wrap:wrap;row-gap:6px}
 
 .ft-en{color:var(--gold);font-family:Inter,var(--sans);font-weight:600;letter-spacing:.03em}
+
+.en-sum{white-space:pre-line}
