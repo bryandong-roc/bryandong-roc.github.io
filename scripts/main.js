@@ -7,7 +7,7 @@ const TBD='（待填）';const LI=`<svg viewBox="0 0 24 24" width="22" height="2
 const dlg=$('#dlg');let lastBtn=null;
 $('#d-x').onclick=()=>dlg.close();
 dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
-dlg.addEventListener('close',()=>lastBtn&&lastBtn.focus());
+dlg.addEventListener('close',()=>{dlg.classList.remove('gal');dlg.onkeydown=null;lastBtn&&lastBtn.focus()});
 
 function filterable(chipsEl,listEl,items,card,emptyMsg,pre){
   let cur='全部';
@@ -79,7 +79,17 @@ if(demo)$('#l-chips').insertAdjacentHTML('beforebegin','<p class="hint">目前�
 const rot=[-8,6,-4,9];
 $('#l-cards').innerHTML=cats.map((c,k)=>{const r=Math.floor(Math.random()*c.p.length);const back=c.p.map((_,i)=>i).filter(i=>i!==r).map((i,j)=>`<img src="${esc(c.p[i].image)}" alt="" style="transform:rotate(${rot[j%4]}deg) translate(${j%2?3:-3}%,${-j*1.5}%);z-index:${j}">`).join('');
 return `<button class="stk" data-cat="${k}" aria-label="${esc(c.t)}：查看全部照片"><span class="pile">${back}<img src="${esc(c.p[r].image)}" alt="${esc(c.p[r].alt||c.t)}" style="z-index:9"></span><b>${esc(c.t)}</b><small>${esc(c.e)}</small><span class="d">${esc(c.d)}</span></button>`}).join('');
-$('#l-cards').onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;const c=cats[+b.dataset.cat];lastBtn=b;$('#d-body').innerHTML=`<h3 id="d-title">${esc(c.t)}</h3><p>${esc(c.d)}</p>`+c.p.map(x=>`<img src="${esc(x.image)}" alt="${esc(x.alt||c.t)}" loading="lazy">`).join('');dlg.showModal()};
+function gallery(c){
+ let i=0;const n=c.p.length;
+ $('#d-body').innerHTML=`<h3 id="d-title">${esc(c.t)}</h3><p class="gd">${esc(c.d)}</p><div class="gv"><img id="gm" class="main" alt=""><button class="pv" aria-label="上一張">‹</button><button class="nx" aria-label="下一張">›</button></div><p class="gcap"><span id="gt"></span><span id="gc"></span></p><div class="thumbs">${c.p.map((x,k)=>`<button data-k="${k}" aria-label="第 ${k+1} 張"><img src="${esc(x.image)}" alt=""></button>`).join('')}</div>`;
+ const draw=()=>{const x=c.p[i];const m=$('#gm');m.src=x.image;m.alt=x.alt||c.t;$('#gt').textContent=x.alt||'';$('#gc').textContent=`${i+1} / ${n}`;document.querySelectorAll('.thumbs button').forEach((b,k)=>b.setAttribute('aria-current',k===i))};
+ const go=d=>{i=(i+d+n)%n;draw()};
+ $('.pv').onclick=()=>go(-1);$('.nx').onclick=()=>go(1);
+ $('.thumbs').onclick=e=>{const b=e.target.closest('button');if(b){i=+b.dataset.k;draw()}};
+ dlg.onkeydown=e=>{if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)};
+ draw();
+}
+$('#l-cards').onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;lastBtn=b;gallery(cats[+b.dataset.cat]);dlg.classList.add('gal');dlg.showModal()};
 }
 function roles(){Loader.get('data/roles.json').then(r=>{if(!r)return;$('#r-lead').textContent=r.lead||'';$('#r-cards').innerHTML=(r.items||[]).map(x=>`<article class="role"><small>${esc(x.en)}</small><h3>${esc(x.name)}</h3><p>${esc(x.summary)}</p><div class="pl">代表成果</div><ul>${(x.proof||[]).map(q=>`<li>${esc(q)}</li>`).join('')}</ul></article>`).join('')})}
 init().then(()=>{lifeCats();roles()});
