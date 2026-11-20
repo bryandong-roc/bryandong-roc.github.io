@@ -60,3 +60,5 @@ header{top:env(safe-area-inset-top,0px)}:root{padding-top:env(safe-area-inset-to
 .ft-en{color:var(--gold);font-family:Inter,var(--sans);font-weight:600;letter-spacing:.03em}
 
 .en-sum{white-space:pre-line}
+
+#architecting .cs{box-shadow:0 2px 12px rgba(36,86,164,.10)}
