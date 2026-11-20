@@ -62,3 +62,27 @@ header{top:env(safe-area-inset-top,0px)}:root{padding-top:env(safe-area-inset-to
 .en-sum{white-space:pre-line}
 
 #architecting .cs{box-shadow:0 2px 12px rgba(36,86,164,.10)}
+
+/* 彈出視窗：置中、暖色底、金色頂邊 */
+dialog{margin:auto;background:#FAF8F4;border-top:6px solid var(--gold);box-shadow:0 24px 60px rgba(15,40,85,.35)}
+dialog::backdrop{background:rgba(23,59,117,.55);backdrop-filter:blur(2px)}
+#d-x{width:38px;height:38px;border-radius:50%;background:rgba(36,86,164,.08);color:var(--navy);font-size:24px;line-height:1;display:grid;place-items:center;transition:background-color .2s,color .2s}
+#d-x:hover,#d-x:focus-visible{background:var(--gold);color:#16263F}
+#d-body h3{font-size:24px;color:var(--navy);margin:0 0 4px}
+dialog.gal{width:min(820px,calc(100% - 32px));background:#F4EFE6}
+.gd{color:var(--txt);margin:0 0 14px}
+.gv{position:relative}
+#d-body .gv img.main{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:8px solid #fff;border-radius:6px;margin:0;background:#fff;box-shadow:0 10px 26px rgba(36,86,164,.22)}
+.gv .pv,.gv .nx{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--navy);font-size:28px;line-height:1;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:background-color .2s}
+.gv .pv{left:18px}.gv .nx{right:18px}.gv .pv:hover,.gv .nx:hover,.gv .pv:focus-visible,.gv .nx:focus-visible{background:var(--gold)}
+.gcap{display:flex;justify-content:space-between;gap:16px;margin:10px 2px 0;color:var(--txt);font-size:15px}
+.thumbs{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.thumbs button{width:76px;aspect-ratio:4/3;padding:0;border:3px solid #fff;border-radius:4px;overflow:hidden;opacity:.6;background:#fff;transition:opacity .2s,border-color .2s}
+.thumbs button[aria-current=true]{opacity:1;border-color:var(--gold)}
+#d-body .thumbs img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border-radius:0}
+@media(max-width:760px){dialog{padding:24px 18px}.gv .pv,.gv .nx{width:36px;height:36px}.thumbs button{width:58px}}
+
+/* 相簿視窗：依視窗高度自動縮放，確保縮圖不被切到 */
+dialog.gal{--gw:min(100%,calc((88vh - 290px)*1.3333))}
+.gv,.gcap,.thumbs{width:var(--gw);margin-left:auto;margin-right:auto}
+.thumbs{justify-content:center}
