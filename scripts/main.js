@@ -40,6 +40,7 @@ async function init(){
   if(ba){
     $('#b-def').textContent=ba.definition||'';
     $('#chain').innerHTML=Loader.published(ba.steps).map((s,i)=>`<li><details><summary><span class="dot">${i+1}</span><span><b>${esc(s.name)}</b><small>${esc(s.en)}｜${esc(s.summary)}</small></span></summary><ul class="cs">${(s.cases||[]).map(c=>`<li>${esc(c)}</li>`).join('')||'<li>'+TBD+'</li>'}</ul></details></li>`).join('');
+    $('#chain').addEventListener('toggle',e=>{if(e.target.open)$('#chain').querySelectorAll('details[open]').forEach(d=>{if(d!==e.target)d.open=false})},true);
   }
   window._t=Loader.published(tl?.items);
   {const fi=a=>a.map(i=>`<button class="fi" data-k="t" data-s="${esc(i.slug||i.title)}"><b>${esc(i.organization||i.title)}</b><small>${esc(i.title)}</small></button>`).join('');const cr=window._t.filter(i=>i.type==='職涯'),so=window._t.filter(i=>i.type!=='職涯');$('#tl').innerHTML=`<div class="lab">職涯</div><div class="row up">${fi(cr)}</div><div class="spine"><span>商業創構</span></div><div class="row down">${fi(so)}</div><div class="lab">社會參與 ・ 求學</div>`;}
