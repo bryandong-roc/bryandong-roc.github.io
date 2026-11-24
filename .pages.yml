@@ -17,7 +17,7 @@ content:
       - name: "en"
         label: "英文名"
         type: "string"
-        description: "例如 Jian-Yi Dong，全站請保持一致"
+        description: "例如 JianYi Dong，全站請保持一致"
       - name: "brand"
         label: "品牌名稱"
         type: "string"
