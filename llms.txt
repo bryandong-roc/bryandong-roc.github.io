@@ -9,7 +9,7 @@
 - 商業策略與新事業開發（Business Strategy & New Business Development）：從市場趨勢與產業機會出發，研擬商業策略、評估新事業可行性，整合商業模式、合作夥伴與關鍵資源，推動新事業從策略規劃到市場落地，開創企業成長與營收機會。
 - 產品策略與全生命週期管理（Product Strategy & Lifecycle Management）：從市場需求與使用者洞察出發，制定產品定位、發展策略與產品路線圖，整合研發、業務及營運資源，推動產品從規劃、開發、上市到持續優化，提升產品競爭力與市場價值。
 - 商業模式與生態系建構（Business Model & Ecosystem Development）：從產業結構與市場需求出發，設計與創新商業模式，整合價值創造、傳遞與獲取機制，串聯企業、合作夥伴及產業資源，建構可持續運作的商業生態系，創造多方共贏的商業價值。
-- 跨域整合與利害關係人管理（Cross-functional Integration & Stakeholder Management）：整合企業內部跨部門團隊與外部利害關係人，協調政府機關、產業夥伴及關鍵合作單位，推動政策溝通、法規協調與跨組織合作，在複雜環境中建立共識、整合資源並促成策略執行。
+- 跨域整合、利害關係人與風險危機管理（Cross-functional Integration, Stakeholder, Risk & Crisis Management）：整合企業內部跨部門團隊與外部利害關係人，協調政府機關、產業夥伴及關鍵合作單位，推動政策溝通、法規協調與跨組織合作；並預防風險，在爭議與危機事件中擔任應變與溝通的整合者，降低裁罰與聲譽損失，於複雜環境中建立共識並促成策略執行。
 
 ## 聯絡
 - Website: https://bryandong-roc.github.io/
