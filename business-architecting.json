@@ -1,0 +1,62 @@
+{
+  "steps": [
+    {
+      "name": "產業洞察",
+      "en": "Industry Insight",
+      "summary": "穿透表象，精準定義痛點。",
+      "cases": [
+        "共享機車大數據分析，找出共享機車借還車痛點",
+        "早期挖掘低延遲攜帶顯示器需求",
+        "以定位與後台數據掌握主要熱區的車輛集中特性"
+      ],
+      "status": "published",
+      "sort_order": 1
+    },
+    {
+      "name": "跨域整合",
+      "en": "Cross-domain Integration",
+      "summary": "結合科技、商業、法律和產官學資源。",
+      "cases": [
+        "串接交通部全國駕駛人資料庫",
+        "政府企業促成電子化簽核表單"
+      ],
+      "status": "published",
+      "sort_order": 2
+    },
+    {
+      "name": "策略創新",
+      "en": "Strategic Innovation",
+      "summary": "找出突破點，設計競爭策略，在法規夾縫中破局。",
+      "cases": [
+        "2 個月取得三縣市營運許可",
+        "利用還車定位減少罰單成本",
+        "參與協商停放上限規範，促成全產業適用"
+      ],
+      "status": "published",
+      "sort_order": 3
+    },
+    {
+      "name": "模式建構",
+      "en": "Business Model Design",
+      "summary": "設計商業模式、產品及營運架構，打造可運作的獲利引擎。",
+      "cases": [
+        "導入差別訂價，帶動週轉率成長三成",
+        "0 到 1 建置新事業處與 D2C 電商"
+      ],
+      "status": "published",
+      "sort_order": 4
+    },
+    {
+      "name": "價值實現",
+      "en": "Value Realization",
+      "summary": "推動跨部門協作、資源配置與商業設計，轉化為有價值的明確成果。",
+      "cases": [
+        "為企業年省數百萬元罰單",
+        "營運效率提升 30%",
+        "EMBA 論文 95 分，應屆第一名"
+      ],
+      "status": "published",
+      "sort_order": 5
+    }
+  ]
+}
